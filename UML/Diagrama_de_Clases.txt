@@ -1,0 +1,26 @@
+
+# Diagrama de Clases
+,--------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+|Planeta                                                                                                                                                                   |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|- nombre: String                                                                                                                                                          |
+|- cantidadSatelites: int                                                                                                                                                  |
+|- masa: double                                                                                                                                                            |
+|- volumen: double                                                                                                                                                         |
+|- diametro: int                                                                                                                                                           |
+|- distanciaSol: int                                                                                                                                                       |
+|- esObservable: boolean                                                                                                                                                   |
+|+ <<constructor>>Planeta(String nombre, int cantidadSatelites, double masa, double volumen, int diametro, int distanciaSol, TipoPlaneta TipoPlaneta, boolean esObservable)|
+|+ imprimir(): String                                                                                                                                                      |
+|+ calcularDensidad(): double                                                                                                                                              |
+|+ esPlanetaExterior(): boolean                                                                                                                                            |
+`--------------------------------------------------------------------------------------------------------------------------------------------------------------------------'
+                                                                                      |                                                                                     
+                                                                                      |                                                                                     
+                                                                               ,-----------.                                                                                
+                                                                               |TipoPlaneta|                                                                                
+                                                                               |-----------|                                                                                
+                                                                               |GASEOSO    |                                                                                
+                                                                               |TERRESTRE  |                                                                                
+                                                                               |ENANO      |                                                                                
+                                                                               `-----------'                                                                                

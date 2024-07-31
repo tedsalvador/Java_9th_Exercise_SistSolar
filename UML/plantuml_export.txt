@@ -1,0 +1,25 @@
+@startuml
+skin rose
+enum TipoPlaneta {
+    GASEOSO
+    TERRESTRE
+    ENANO
+}
+
+class Planeta {
+    - nombre: String
+    - cantidadSatelites: int
+    - masa: double
+    - volumen: double
+    - diametro: int
+    - distanciaSol: int
+    - esObservable: boolean
+    + Planeta(String nombre, int cantidadSatelites, double masa, double volumen, int diametro, int distanciaSol, TipoPlaneta TipoPlaneta, boolean esObservable)
+    + imprimir(): String
+    + calcularDensidad(): double
+    + esPlanetaExterior(): boolean
+}
+
+Planeta --> TipoPlaneta: +TipoPlaneta
+
+@enduml
